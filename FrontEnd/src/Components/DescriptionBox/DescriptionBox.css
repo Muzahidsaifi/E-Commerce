@@ -1,0 +1,79 @@
+.descriptionbox {
+
+  margin: 50px 170px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.descriptionbox-navigation {
+  display: flex;
+  border-bottom: 1.5px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.descriptionbox-nav-box,
+.descriptionbox-nav-box-fade {
+  padding: 14px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.descriptionbox-nav-box {
+  border-bottom: 2.5px solid #333;
+  color: #000;
+}
+
+.descriptionbox-nav-box-fade {
+  color: #888;
+}
+
+.descriptionbox-description {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.descriptionbox-description p {
+  margin-bottom: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .descriptionbox {
+    margin: 40px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .descriptionbox {
+    margin: 30px 20px;
+  }
+
+  .descriptionbox-nav-box,
+  .descriptionbox-nav-box-fade {
+    font-size: 15px;
+    padding: 12px 18px;
+  }
+
+  .descriptionbox-description {
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .descriptionbox {
+    margin: 20px 12px;
+  }
+
+  .descriptionbox-nav-box,
+  .descriptionbox-nav-box-fade {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .descriptionbox-description {
+    font-size: 13.5px;
+  }
+}

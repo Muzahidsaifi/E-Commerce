@@ -1,0 +1,222 @@
+.shop-category-banner {
+  display: block;
+  width: 100%;           /* Full width of parent */
+  max-width: 1200px;     /* Max width to limit size on big screens */
+  height: auto;          /* Height adjusts according to width */
+  max-height: 300px;
+  margin: 99px auto 40px auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .shop-category-banner {
+    max-height: 250px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .shop-category-banner {
+    max-height: 180px;
+    margin: 60px auto 30px auto;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 400px) {
+  .shop-category-banner {
+    max-height: 140px;
+    margin: 100px auto 20px auto;  /* margin-top set to 100px */
+    border-radius: 8px;
+  }
+}
+
+/* Very very small phones */
+@media (max-width: 280px) {
+  .shop-category-banner {
+    max-height: 120px;
+    margin: 80px auto 15px auto;
+    border-radius: 6px;
+  }
+}
+
+
+.shop-category-indexSort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  color: #3a3a3a;
+}
+
+.shop-category-indexSort p span {
+  font-weight: 700;
+  color: #222;
+}
+
+.shopcategory-sort {
+  padding: 8px 25px;
+  border-radius: 25px;
+  border: 1.5px solid #35341b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #35341b;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.shopcategory-sort img {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* ===== Products container - popular style ===== */
+.shop-category-products {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Card wrapper same as popular */
+.shop-category-products > * {
+  flex: 1 1 calc(25% - 30px); /* 4 cards per row */
+  max-width: calc(25% - 30px);
+  box-sizing: border-box;
+}
+
+/* Image styling */
+.shop-category-products img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Load More button */
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  width: 230px;
+  height: 69px;
+  border-radius: 80px;
+  background: #232206;
+  color: #ffb2b2;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shopcategory-loadmore:hover {
+  background-color: #3a3a12;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet (992px and below) - 3 cards per row */
+@media (max-width: 992px) {
+  .shop-category-products > * {
+    flex: 1 1 calc(33.33% - 30px);
+    max-width: calc(33.33% - 30px);
+  }
+}
+
+/* Mobile (600px and below) - 2 cards per row */
+@media (max-width: 600px) {
+  .shop-category-products > * {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+  
+  .shop-category-indexSort {
+    margin: 0 5%;
+    font-size: 1rem;
+  }
+
+  .shop-category-banner {
+    max-height: 200px;
+  }
+
+  .shopcategory-loadmore {
+    width: 180px;
+    height: 55px;
+    font-size: 18px;
+    margin: 100px auto;
+  }
+}
+
+/* Between 425px and 321px - 2 cards per row (fix as per request) */
+@media (max-width: 425px) and (min-width: 321px) {
+  .shop-category-products > * {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+/* ... baaki CSS jaisa tha ... */
+
+/* Mobile (600px and below) - 2 cards per row */
+@media (max-width: 600px) {
+  .shop-category-products > * {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+  
+  /* thoda styling */
+  .shop-category-indexSort {
+    margin: 0 5%;
+    font-size: 1rem;
+  }
+
+  .shop-category-banner {
+    max-height: 200px;
+  }
+
+  .shopcategory-loadmore {
+    width: 180px;
+    height: 55px;
+    font-size: 18px;
+    margin: 100px auto;
+  }
+}
+
+/* Between 425px and 280px - 2 cards per row */
+@media (max-width: 425px) and (min-width: 281px) {
+  .shop-category-products > * {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+/* Very small phones (280px and below) - 1 card per row */
+@media (max-width: 280px) {
+  .shop-category-products > * {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .shop-category-indexSort {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .shopcategory-sort {
+    width: 100%;
+    justify-content: center;
+  }
+}

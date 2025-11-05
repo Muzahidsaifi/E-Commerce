@@ -1,0 +1,52 @@
+.breadcrum {
+  display: flex;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: #555;
+  margin: 20px 170px;
+  gap: 6px;
+  flex-wrap: wrap;
+  background-color: #fff; 
+  z-index: 100; 
+  margin-top: 150px;
+}
+
+
+.breadcrum img {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  margin: 0 4px;
+  opacity: 0.7;
+}
+
+.breadcrum span {
+  color: #000;
+  font-weight: 600;
+}
+
+
+@media (max-width: 1024px) {
+  .breadcrum {
+    margin: 20px 50px;
+    font-size: 13px;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .breadcrum {
+    margin: 15px 20px;
+    font-size: 12px;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrum {
+    margin: 10px 10px;
+    font-size: 11px;
+    margin-top: 100px;
+  }
+}

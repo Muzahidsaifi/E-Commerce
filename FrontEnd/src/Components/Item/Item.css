@@ -1,0 +1,79 @@
+.item {
+  width: 280px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.item p {
+  margin: 6px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Prices container */
+.item-prices {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  align-items: center;
+}
+
+/* New price */
+.item-price-new {
+  color: rgb(103, 91, 114);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Old price */
+.item-price-old {
+  color: rgb(78, 167, 167);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  .item {
+    width: 90%; /* adapt width to screen */
+  }
+
+  .item p {
+    font-size: 14px;
+  }
+
+  .item-price-new,
+  .item-price-old {
+    font-size: 16px;
+  }
+
+  .item-prices {
+    gap: 15px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .item {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .item p {
+    font-size: 13px;
+  }
+
+  .item-price-new,
+  .item-price-old {
+    font-size: 14px;
+  }
+
+  .item-prices {
+    gap: 10px;
+    flex-direction: column; /* stack prices vertically on small screens */
+    align-items: flex-start;
+  }
+}

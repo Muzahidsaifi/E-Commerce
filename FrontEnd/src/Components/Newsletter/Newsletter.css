@@ -1,0 +1,124 @@
+.newsletter {
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto 70px auto;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  border-radius: 20px;
+  border: 1px solid rgb(83, 97, 55);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.newsletter h1 {
+  color: #241125;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.newsletter p {
+  color: #7c3880;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.newsletter-input-container {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  background: wheat;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 1px solid #201e1e;
+}
+
+.newsletter-input-container input {
+  flex: 1;
+  padding: 0 20px;
+  border: none;
+  font-size: 1rem;
+  color: #616161;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.newsletter-input-container button {
+  padding: 0 30px;
+  background: black;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-input-container button:hover {
+  background: #333;
+}
+
+/* ===========================
+   Responsive Styles
+=========================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .newsletter {
+    padding: 30px 16px;
+    border-radius: 16px;
+  }
+
+  .newsletter h1 {
+    font-size: 2rem;
+  }
+
+  .newsletter p {
+    font-size: 1rem;
+  }
+
+  .newsletter-input-container {
+    height: 48px;
+  }
+
+  .newsletter-input-container button {
+    padding: 0 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .newsletter h1 {
+    font-size: 1.6rem;
+  }
+
+  .newsletter p {
+    font-size: 0.95rem;
+  }
+
+  .newsletter-input-container {
+    flex-direction: column;
+    height: auto;
+    border-radius: 12px;
+    overflow: visible;
+  }
+
+  .newsletter-input-container input {
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-bottom: 1px solid #ccc;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .newsletter-input-container button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 0 0 12px 12px;
+    font-size: 1rem;
+  }
+}
